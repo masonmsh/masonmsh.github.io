@@ -1,5 +1,14 @@
 ## Welcome
-记录简单的指令的操作
+***
 
 ### Linux
-- [进程操作](https://github.com/masonmsh/masonmsh.github.io/blob/master/linux/process.md "杀死、暂停、继续、后台")
+#### 进程操作
+**查看进程**
+```
+ps -aux
+```
+或
+```
+ps -ef
+```
+**进程**
