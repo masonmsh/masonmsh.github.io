@@ -1,8 +1,8 @@
-## Welcome
+# Welcome
 ***
 
-### Linux
-#### 进程操作
+## Linux
+### 进程操作
 **查看进程**
 ```
 ps -aux
