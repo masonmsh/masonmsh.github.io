@@ -52,3 +52,13 @@ for key,value in a.items():
     print(key+':'+value)
 
 ```
+#### Pandas
+**统计每一行元素的个数**
+```python
+import pandas as pd
+df = pd.DataFrame([list('AABBAB'), list('BABAAA')])
+
+(df == 'A').sum(axis=1)
+```
+
+#### Numpy
