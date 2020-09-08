@@ -3,7 +3,7 @@
 
 - [Welcome](#welcome)
 - [Linux](#linux)
-    - [配置文件](#配置文件)
+    - [linux配置文件](#linux配置文件)
     - [进程操作](#进程操作)
       - [查看进程](#查看进程)
       - [杀死进程](#杀死进程)
@@ -37,11 +37,11 @@
     - [aria2配置文件](#aria2配置文件)
     - [运行](#运行)
 - [VSCode](#vscode)
-    - [设置](#设置)
+    - [vsc设置](#vsc设置)
 
 ***
 ## Linux
-#### 配置文件
+#### linux配置文件
 [.bashrc](https://github.com/masonmsh/Notes/blob/master/plugin/linux/bashrc.txt "bash")  
 [.vimrc](https://github.com/masonmsh/Notes/blob/master/plugin/linux/vimrc.txt "vim")  
 [source.list](https://github.com/masonmsh/Notes/blob/master/plugin/linux/sources.txt "/etc/apt/source")
@@ -176,7 +176,7 @@ aria2c.exe --conf-path=aria2.conf
 ```
 [run](https://github.com/masonmsh/Notes/blob/master/aria2/run.bat "run")
 ## VSCode
-#### 设置
+#### vsc设置
 [setting.json](https://github.com/masonmsh/Notes/blob/master/plugin/vsc/setting.json "json")  
 [list](https://github.com/masonmsh/Notes/blob/master/plugin/vsc/list.txt "list")
 
