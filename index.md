@@ -1,21 +1,30 @@
 ## Welcome
 ***
+
 - [Welcome](#welcome)
 - [Linux](#linux)
     - [进程操作](#进程操作)
       - [查看进程](#查看进程)
+      - [杀死进程](#杀死进程)
+      - [断连继续运行](#断连继续运行)
     - [硬盘操作](#硬盘操作)
+      - [列举文件](#列举文件)
+      - [占用空间](#占用空间)
 - [Windows](#windows)
     - [7-zip](#7-zip)
     - [文件操作](#文件操作)
 - [Python](#python)
     - [pip](#pip)
+      - [pip配置文件](#pip配置文件)
     - [遍历字典](#遍历字典)
     - [Pandas](#pandas)
+      - [统计每一行元素的个数](#统计每一行元素的个数)
     - [Numpy](#numpy)
     - [Scrapy](#scrapy)
+      - [新建项目](#新建项目)
+      - [执行项目](#执行项目)
 - [Aria2](#aria2)
-    - [配置文件](#配置文件)
+    - [aria2配置文件](#aria2配置文件)
     - [运行](#运行)
 - [VSCode](#vscode)
     - [设置](#设置)
@@ -28,20 +37,20 @@
 ps -aux
 ps -ef
 ```
-**杀死进程**
+##### 杀死进程
 ```
 kill -9 pid
 ```
-**断连继续运行**
+##### 断连继续运行
 ```
 nohup xxx >xxx.out 2>&1 &
 ```
 #### 硬盘操作
-**列举文件**
+##### 列举文件
 ```
 ls [-alht]
 ```
-**占用空间**
+##### 占用空间
 ```
 du -sh --max-depth=1
 ```
@@ -54,7 +63,7 @@ du -sh --max-depth=1
 ***
 ## Python
 #### pip
-**配置文件**  
+##### pip配置文件
 [pip.conf](https://github.com/masonmsh/Notes/blob/master/doc/python/pip.ini "conf")  
 [pip mirror](https://github.com/masonmsh/Notes/blob/master/doc/python/pip%20mirror.txt "mirror")
 #### 遍历字典
@@ -82,7 +91,7 @@ for key,value in a.items():
     print(key+':'+value)
 ```
 #### Pandas
-**统计每一行元素的个数**
+##### 统计每一行元素的个数
 ```python
 import pandas as pd
 df = pd.DataFrame([list('AABBAB'), list('BABAAA')])
@@ -91,17 +100,17 @@ df = pd.DataFrame([list('AABBAB'), list('BABAAA')])
 ```
 #### Numpy
 #### Scrapy
-**新建项目**
+##### 新建项目
 ```
 scrapy startproject xxx
 ```
-**执行项目**
+##### 执行项目
 ```
 scrapy crawl xxx -o xxx.json -t json
 ```
 ***
 ## Aria2
-#### 配置文件
+#### aria2配置文件
 [aria2.conf](https://github.com/masonmsh/Notes/blob/master/aria2/aria2.conf "conf")
 #### 运行
 ```
