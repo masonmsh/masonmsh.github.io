@@ -73,3 +73,9 @@ scrapy startproject xxx
 ```
 scrapy crawl xxx -o xxx.json -t json
 ```
+
+## Windows
+#### 7-zip压缩命令
+[批量压缩](https://github.com/masonmsh/Notes/blob/master/doc/bat/7zip%E6%89%B9%E9%87%8F%E6%93%8D%E4%BD%9C.txt "7-zip")
+#### 文件操作
+[fileopt](https://github.com/masonmsh/Notes/blob/master/doc/bat/fileopt.py "fileopt")
