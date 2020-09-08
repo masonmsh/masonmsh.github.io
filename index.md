@@ -25,7 +25,13 @@ ls [-alht]
 ```
 du -sh --max-depth=1
 ```
-
+***
+## Windows
+#### 7-zip
+[批量压缩](https://github.com/masonmsh/Notes/blob/master/doc/bat/7zip%E6%89%B9%E9%87%8F%E6%93%8D%E4%BD%9C.txt "7-zip")
+#### 文件操作
+[fileopt](https://github.com/masonmsh/Notes/blob/master/doc/bat/fileopt.py "fileopt")
+***
 ## Python
 #### pip
 **配置文件**  
@@ -73,9 +79,12 @@ scrapy startproject xxx
 ```
 scrapy crawl xxx -o xxx.json -t json
 ```
-
-## Windows
-#### 7-zip压缩命令
-[批量压缩](https://github.com/masonmsh/Notes/blob/master/doc/bat/7zip%E6%89%B9%E9%87%8F%E6%93%8D%E4%BD%9C.txt "7-zip")
-#### 文件操作
-[fileopt](https://github.com/masonmsh/Notes/blob/master/doc/bat/fileopt.py "fileopt")
+***
+## Aria2
+#### 配置文件
+[aria2.conf](https://github.com/masonmsh/Notes/blob/master/aria2/aria2.conf "conf")
+#### 运行
+```
+aria2c.exe --conf-path=aria2.conf
+```
+[run](https://github.com/masonmsh/Notes/blob/master/aria2/run.bat "run")
