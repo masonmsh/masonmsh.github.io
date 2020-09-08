@@ -3,6 +3,7 @@
 
 - [Welcome](#welcome)
 - [Linux](#linux)
+    - [配置文件](#配置文件)
     - [进程操作](#进程操作)
       - [查看进程](#查看进程)
       - [杀死进程](#杀死进程)
@@ -39,6 +40,10 @@
 
 ***
 ## Linux
+#### 配置文件
+[.bashrc](https://github.com/masonmsh/Notes/blob/master/plugin/linux/bashrc.txt "bash")  
+[.vimrc](https://github.com/masonmsh/Notes/blob/master/plugin/linux/vimrc.txt "vim")  
+[source.list](https://github.com/masonmsh/Notes/blob/master/plugin/linux/sources.txt "/etc/apt/source")
 #### 进程操作
 ##### 查看进程
 ```
