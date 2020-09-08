@@ -16,13 +16,21 @@
 - [Python](#python)
     - [pip](#pip)
       - [pip配置文件](#pip配置文件)
+      - [pip配置文件位置](#pip配置文件位置)
     - [遍历字典](#遍历字典)
     - [Pandas](#pandas)
       - [统计每一行元素的个数](#统计每一行元素的个数)
     - [Numpy](#numpy)
+      - [序列排序返回索引](#序列排序返回索引)
+      - [获得列表中每个元素出现的次数](#获得列表中每个元素出现的次数)
+      - [Pandas和Numpy互相转化](#pandas和numpy互相转化)
     - [Scrapy](#scrapy)
       - [新建项目](#新建项目)
       - [执行项目](#执行项目)
+    - [Tensorflow](#tensorflow)
+      - [静态分配GPU](#静态分配gpu)
+      - [动态分配GPU](#动态分配gpu)
+      - [指定GPU](#指定gpu)
 - [Aria2](#aria2)
     - [aria2配置文件](#aria2配置文件)
     - [运行](#运行)
@@ -64,6 +72,10 @@ du -sh --max-depth=1
 ##### pip配置文件
 [pip.conf](https://github.com/masonmsh/Notes/blob/master/doc/python/pip.ini "conf")  
 [pip mirror](https://github.com/masonmsh/Notes/blob/master/doc/python/pip%20mirror.txt "mirror")
+##### pip配置文件位置
+```
+pip -v config list
+```
 #### 遍历字典
 ```python
 a={'a': '1', 'b': '2', 'c': '3'}
@@ -97,6 +109,27 @@ df = pd.DataFrame([list('AABBAB'), list('BABAAA')])
 (df == 'A').sum(axis=1)
 ```
 #### Numpy
+##### 序列排序返回索引
+```python
+# argsort()函数是将x中的元素从小到大排列，提取其对应的index(索引)
+import numpy as np
+x = np.array([2,1,4,5,7,3,6])
+y = x.argsort()
+print (y[1], y[-1])
+```
+##### 获得列表中每个元素出现的次数
+```python
+from collections import Counter
+l = [1,2,3,4,1,1,2,4,5,1,4,3,8,7,8,3]
+count = Counter(l)
+c = dict(count)
+print(c)
+```
+##### Pandas和Numpy互相转化
+```python
+array = Dataframe_Name.values
+df = pd.Dataframe(array)
+```
 #### Scrapy
 ##### 新建项目
 ```
@@ -105,6 +138,27 @@ scrapy startproject xxx
 ##### 执行项目
 ```
 scrapy crawl xxx -o xxx.json -t json
+```
+#### Tensorflow
+##### 静态分配GPU
+```python
+# 假如有12GB的显存并使用其中的4GB:
+gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.333)
+sess = tf.Session(config=tf.ConfigProto(gpu_options=gpu_options))
+```
+##### 动态分配GPU
+```python
+config = tf.ConfigProto()
+config.gpu_options.allow_growth=True
+sess = tf.Session(config=config)
+```
+##### 指定GPU
+```python
+import os
+os.environ["CUDA_VISIBLE_DEVICES"] = "0"
+
+# 或者在脚本或者命令行中指定
+CUDA_VISIBLE_DEVICES=0
 ```
 ## Aria2
 #### aria2配置文件
