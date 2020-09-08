@@ -28,8 +28,9 @@ du -sh --max-depth=1
 
 ## Python
 #### pip
-**pip.conf**
-[pip]("https://github.com/masonmsh/Notes/blob/master/doc/python/pip.ini" "pip")
+**配置文件**  
+[pip.conf]("https://github.com/masonmsh/Notes/blob/master/doc/python/pip.ini" "conf")  
+[pip mirror]("https://github.com/masonmsh/Notes/blob/master/doc/python/pip%20mirror.txt" "mirror")
 #### 遍历字典
 ```python
 a={'a': '1', 'b': '2', 'c': '3'}
