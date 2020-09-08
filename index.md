@@ -3,6 +3,7 @@
 - [Welcome](#welcome)
 - [Linux](#linux)
     - [进程操作](#进程操作)
+      - [查看进程](#查看进程)
     - [硬盘操作](#硬盘操作)
 - [Windows](#windows)
     - [7-zip](#7-zip)
@@ -22,7 +23,7 @@
 ***
 ## Linux
 #### 进程操作
-**查看进程**
+##### 查看进程
 ```
 ps -aux
 ps -ef
