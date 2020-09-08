@@ -27,6 +27,9 @@ du -sh --max-depth=1
 ```
 
 ## Python
+#### pip
+**pip.conf**
+[pip]("https://github.com/masonmsh/Notes/blob/master/doc/python/pip.ini" "pip")
 #### 遍历字典
 ```python
 a={'a': '1', 'b': '2', 'c': '3'}
@@ -50,7 +53,6 @@ for kv in a.items():
 ### 遍历 key value
 for key,value in a.items():
     print(key+':'+value)
-
 ```
 #### Pandas
 **统计每一行元素的个数**
@@ -60,5 +62,13 @@ df = pd.DataFrame([list('AABBAB'), list('BABAAA')])
 
 (df == 'A').sum(axis=1)
 ```
-
 #### Numpy
+#### Scrapy
+**新建项目**
+```
+scrapy startproject xxx
+```
+**执行项目**
+```
+scrapy crawl xxx -o xxx.json -t json
+```
