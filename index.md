@@ -69,7 +69,7 @@ du -sh --max-depth=1
 ```
 ## Windows
 #### 7-zip
-[批量压缩](https://github.com/masonmsh/Notes/blob/master/doc/bat/7zip%E6%89%B9%E9%87%8F%E6%93%8D%E4%BD%9C.txt "7-zip")
+[批量操作](https://github.com/masonmsh/Notes/blob/master/doc/bat/7zip%E6%89%B9%E9%87%8F%E6%93%8D%E4%BD%9C.txt "7-zip")
 #### 文件操作
 [fileopt](https://github.com/masonmsh/Notes/blob/master/doc/bat/fileopt.py "fileopt")
 ## Python
@@ -110,8 +110,8 @@ for key,value in a.items():
 ```python
 import pandas as pd
 df = pd.DataFrame([list('AABBAB'), list('BABAAA')])
-
-(df == 'A').sum(axis=1)
+d = (df == 'A').sum(axis=1)
+print(d)
 ```
 #### Numpy
 ##### 序列排序返回索引
@@ -120,7 +120,7 @@ df = pd.DataFrame([list('AABBAB'), list('BABAAA')])
 import numpy as np
 x = np.array([2,1,4,5,7,3,6])
 y = x.argsort()
-print (y[1], y[-1])
+print(y, y[1], y[-1], sep='\n')
 ```
 ##### 获得列表中每个元素出现的次数
 ```python
