@@ -88,3 +88,9 @@ scrapy crawl xxx -o xxx.json -t json
 aria2c.exe --conf-path=aria2.conf
 ```
 [run](https://github.com/masonmsh/Notes/blob/master/aria2/run.bat "run")
+***
+## VSCode
+#### 设置
+[setting.json](https://github.com/masonmsh/Notes/blob/master/plugin/vsc/setting.json "json")  
+[list](https://github.com/masonmsh/Notes/blob/master/plugin/vsc/list.txt "list")
+
