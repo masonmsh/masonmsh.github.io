@@ -70,9 +70,9 @@ du -sh --max-depth=1
 ```
 ## Windows
 #### 7-zip
-[批量操作](https://github.com/masonmsh/Notes/blob/master/doc/bat/7zip%E6%89%B9%E9%87%8F%E6%93%8D%E4%BD%9C.txt "7-zip")
+[批量操作.bat](https://github.com/masonmsh/Notes/blob/master/doc/bat/7zip%E6%89%B9%E9%87%8F%E6%93%8D%E4%BD%9C.txt "7-zip")
 #### 文件操作
-[fileopt](https://github.com/masonmsh/Notes/blob/master/doc/bat/fileopt.py "fileopt")
+[fileopt.py](https://github.com/masonmsh/Notes/blob/master/doc/bat/fileopt.py "fileopt")
 ## Python
 #### pip
 ##### pip配置文件
@@ -174,7 +174,7 @@ CUDA_VISIBLE_DEVICES=0
 ```
 aria2c.exe --conf-path=aria2.conf
 ```
-[run](https://github.com/masonmsh/Notes/blob/master/aria2/run.bat "run")
+[run.bat](https://github.com/masonmsh/Notes/blob/master/aria2/run.bat "run")
 ## VSCode
 #### vsc设置
 [setting.json](https://github.com/masonmsh/Notes/blob/master/plugin/vsc/setting.json "json")  
