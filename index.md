@@ -1,4 +1,5 @@
 ## Welcome
+[blog](https://masonmsh.github.io/ "冷香榭")
 ***
 
 - [Welcome](#welcome)
