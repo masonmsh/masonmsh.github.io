@@ -5,18 +5,15 @@
   <meta charset="utf-8">
   <meta name="author" content="msh">
   <title>冷香榭</title>
-  <!-- base -->
-  <base href="https://masonmsh.github.io/">
-  <!-- <base href="file:///D:/space/git/masonmsh.github.io/"> -->
-
+  <base id="burl" href="file:///D:/space/git/masonmsh.github.io/">
   <link rel="shortcut icon" href="favicon.ico">
   <link rel="stylesheet" type="text/css" href="doc/css/main.css">
-  <link rel="import" href="doc/css/rec.html" id="rec" />
 </head>
 
 <body>
+  <script src="base.js"></script>
   <div class="header">
-    <img src="favicon.ico" />
+    <img id="logo" onclick="changebase()" src="favicon.ico" />
     <h3>冷香榭</h3>
   </div>
   <hr />
